@@ -1,16 +1,24 @@
+import UsersList from './UsersList/UsersList';
+
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        backgroundColor: '#111',
+        height: '100%',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        fontSize: 12,
+        color: '#fff',
       }}
     >
-      React homework template
+      <h1>Users</h1>
+      <div>
+        <UsersList />
+      </div>
+      
     </div>
   );
 };
